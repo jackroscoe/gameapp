@@ -32,6 +32,7 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
 	public $components = array(
         'Session',
         'Auth' => array(
@@ -45,8 +46,6 @@ class AppController extends Controller {
 		if (isset($user['role']) && $user['role'] === 'admin') {
 			return true;
 		}
-		
-		$this->set('loggedIn', $this->Auth->loggedIn());
 
 		// Default deny
 		return false;
