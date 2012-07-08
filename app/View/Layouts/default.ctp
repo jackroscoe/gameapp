@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,400italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<?php echo $this->Html->charset(); ?>
 	<title>GameApp - 
 		<?php echo $title_for_layout; ?>
