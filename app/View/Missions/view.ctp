@@ -1,4 +1,4 @@
-<div class="mission-view p20 mb20">
+<div class="mission-view p20">
 	<?php foreach($missions as $mission) { ?>
 		<div class="island col col-280">
 			<h2><?php echo $mission['title']; ?></h2>

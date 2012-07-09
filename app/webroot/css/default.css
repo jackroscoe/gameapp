@@ -68,9 +68,10 @@ ul , ol { margin: 0 0 20px; }
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-	.game-column {
+	.manager-column {
 		border: solid 1px #CCC;
 	}
+	.game-column { background: #EFEFEF; }
 	.guide-column, .section-column, .mission-column  { margin-left: -1px; }
 	
 	.manager a.add { margin-top: 2px; }
@@ -95,6 +96,8 @@ ul , ol { margin: 0 0 20px; }
 .mission-view {
 	width: 878px;
 	border: solid 1px #CCC;
+	border-bottom: none;
+	background: #EFEFEF;
 	display: none;
 	overflow: hidden;
 	

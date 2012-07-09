@@ -1,11 +1,9 @@
 <div class="island p20 no-bottom">
 	<h1>Game Management</h1>
 	<p>Below is a list of games currently in the system. You can add new games using the button below. If you want to manage the missions for a game you can click on it to view more information.</p>
-	<p class="italic">NOTE: DELETION OF GAMES IS NOT CURRENTLY AVAILABLE</p>
-	<a href="#" class="link">ADD LINK HERE</a>
 	<?php //$session->check('Auth.User.id') ?>
 	<div class="manager">
-		<div class="island p20 game-column col-190">
+		<div class="island p20 manager-column game-column col-190">
 			<h2>Games</h2>
 			<ul class="games">
 				<?php foreach($games as $game) { ?>
@@ -15,7 +13,7 @@
 				} ?>
 			</ul>
 		</div>
-		<div class="island p20 game-column guide-column col-189">
+		<div class="island p20 manager-column guide-column col-189">
 			<h2>My Guides</h2>
 			<div class="add-guide hidden mb20">
 				<input type="text" name="title" />
@@ -25,7 +23,7 @@
 			<ul class="guides">
 			</ul>
 		</div>
-		<div class="island p20 game-column section-column col-188">
+		<div class="island p20 manager-column section-column col-188">
 			<h2>Sections</h2>
 			<div class="add-section hidden mb20">
 				<input type="text" name="title" />
@@ -35,7 +33,7 @@
 			<ul class="sections">
 			</ul>
 		</div>
-		<div class="island p20 game-column mission-column col-188">
+		<div class="island p20 manager-column mission-column col-188">
 			<h2>Missions</h2>
 			<div class="add-mission hidden mb20">
 				<input type="text" name="title" />
@@ -54,7 +52,7 @@
 			setTimeout(function() {
 				// Resize all columns to fit the max height
 				var maxHeight = 0;
-				$("div.game-column ul").each(function() {
+				$("div.manager-column ul").each(function() {
 					var el = $(this);
 					if(el.height() > maxHeight) {
 						maxHeight = el.height();
@@ -63,7 +61,7 @@
 
 				// Add combined height of search box and headings to get total column height
 				maxHeight += 104;
-				$("div.game-column").each(function() {
+				$("div.manager-column").each(function() {
 					$(this).animate({
 						height: maxHeight
 					}, 400);
@@ -71,7 +69,7 @@
 			}, 400);	
 		}
 		
-		$("div.game-column li a.listing:not(.open-mission)").live("click", function() {
+		$("div.manager-column li a.listing:not(.open-mission)").live("click", function() {
 			var el = $(this);
 			var newType;
 			var prevType;
@@ -96,6 +94,11 @@
 				$("ul.missions li").animate({
 					opacity: 0
 				}, 140);
+				
+				$(".game-column").css({'background' : 'white'});
+				$(".section-column").css({'background' : 'white'});
+				$(".mission-column").css({'background' : 'white'});
+				$(".guide-column").css({'background' : '#EFEFEF'});
 			} else if (el.parent().parent().hasClass('guides')) {
 				prevType = 'guide';
 				newType = 'section';
@@ -111,11 +114,18 @@
 					opacity: 0
 				}, 140);
 				$("p.no-game").animate({opacity: 0}, 140);
+				
+				$(".guide-column").css({'background' : 'white'});
+				$(".mission-column").css({'background' : 'white'});
+				$(".section-column").css({'background' : '#EFEFEF'});
 			} else if (el.parent().parent().hasClass('sections')) {
 				prevType = 'section';
 				newType = 'mission';
 				
 				$("p.no-section").animate({optacity: 0}, 140).css({'display' : 'none'});
+				
+				$(".section-column").css({'background' : 'white'});
+				$(".mission-column").css({'background' : '#EFEFEF'});
 			}
 			
 			$("ul." + newType + "s li").animate({
@@ -149,17 +159,38 @@
 		$("a.open-mission").live("click", function() {
 			var el = $(this);
 			
-			$("ul.missionss a").removeClass('selected');
+			$("ul.missions a").removeClass('selected');
 			el.addClass('selected');
 			
-			$.ajax({
-				url: el.attr('href'),
-				success: function(html) {
-					// Insert Mission view frame above management table
-					$(html).insertAfter($(".manager"));
-					$(".mission-view").slideDown();
-				}
-			});
+			if($(".mission-view").length > 0) {
+				$(".mission-view").slideUp(140);
+				setTimeout(function() {
+					$.ajax({
+						url: el.attr('href'),
+						success: function(html) {
+							// Insert Mission view frame above management table
+							$(".mission-view").replaceWith(html);
+							$(".mission-view").slideDown(140);
+						}
+					});
+				}, 145);
+			} else {
+				$.ajax({
+					url: el.attr('href'),
+					success: function(html) {
+						// Insert Mission view frame above management table
+						$(html).insertBefore($(".manager"));
+						$(".mission-view").slideDown();
+					}
+				});
+			}
+			
+			setTimeout(function() {
+				$('html,body').animate({
+					scrollTop: $("div.mission-view").offset().top
+				}, 140);
+				console.log($("div.mission-view").offset().top);
+			}, 290);
 			
 			return false;
 		});
