@@ -18,7 +18,7 @@
 		<h2>My Guides</h2>
 		<div class="add-guide hidden">
 			<input type="text" name="title" />
-			<?php echo $this->Html->link('Add new guide', '/guides/add/', array('class' => 'add-guide')); ?>
+			<?php echo $this->Html->link('Add new guide', '/guides/add/', array('class' => 'add', 'data-type' => 'guide', 'data-prev-type' => 'game')); ?>
 		</div>
 		<ul class="guides">
 		</ul>
@@ -27,7 +27,7 @@
 		<h2>Sections</h2>
 		<div class="add-section hidden">
 			<input type="text" name="title" />
-			<?php echo $this->Html->link('Add new guide', '/sections/add/', array('class' => 'add-section')); ?>
+			<?php echo $this->Html->link('Add new guide', '/sections/add/', array('class' => 'add', 'data-type' => 'section', 'data-prev-type' => 'guide')); ?>
 		</div>
 		<ul class="sections">
 		</ul>
@@ -72,23 +72,26 @@
 			$("ul." + newType + "s a").removeClass('selected');
 			el.addClass('selected');
 			
-			$("a.add-" + newType).attr('href', '/gameapp/' + newType + 's/add/' + dataId);
+			$("a[data-type=" + newType + "]").attr('href', '/gameapp/' + newType + 's/add/' + dataId);
+			//console.log($("a[data-type=" + newType).height());
 
 			return false;
 		});
 		
-		$("a.add-guide").click(function() {
+		$("a.add").click(function() {
 			var el = $(this);
 			var url = el.attr('href');
 			var title = el.prev().val();
 			var data = url.split('/');
-			var game_id = data[4];
+			var id = data[4];
+			var type = el.attr("data-type");
+			var prevType = el.attr("data-prev-type");
 			
 			$.ajax({
 				url: url + '/' + title,
 				success: function(html) {
 					// Replace current guide list with new list
-					$("ul.games a[data-gameId=" + game_id + "]").click();
+					$("ul." + prevType + "s a[data-id=" + id + "]").click();
 				}
 			});
 			
