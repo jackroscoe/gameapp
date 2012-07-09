@@ -15,7 +15,7 @@
 				} ?>
 			</ul>
 		</div>
-		<div class="island p20 game-column col-190">
+		<div class="island p20 game-column guide-column col-189">
 			<h2>My Guides</h2>
 			<div class="add-guide hidden mb20">
 				<input type="text" name="title" />
@@ -25,7 +25,7 @@
 			<ul class="guides">
 			</ul>
 		</div>
-		<div class="island p20 game-column col-190">
+		<div class="island p20 game-column section-column col-188">
 			<h2>Sections</h2>
 			<div class="add-section hidden mb20">
 				<input type="text" name="title" />
@@ -35,7 +35,7 @@
 			<ul class="sections">
 			</ul>
 		</div>
-		<div class="island p20 game-column col-190">
+		<div class="island p20 game-column mission-column col-188">
 			<h2>Missions</h2>
 			<div class="add-mission hidden mb20">
 				<input type="text" name="title" />
@@ -48,12 +48,33 @@
 	</div>
 </div>
 <script>
-	$(document).ready(function() {	
-		$("div.game-column li a:not(.delete)").live("click", function() {
-			console.log('clicked');
+	$(document).ready(function() {
+		function resizeColumns() {
+			// Wait until ajax request has fully loaded
+			setTimeout(function() {
+				// Resize all columns to fit the max height
+				var maxHeight = 0;
+				$("div.game-column ul").each(function() {
+					var el = $(this);
+					if(el.height() > maxHeight) {
+						maxHeight = el.height();
+					}
+				});
+
+				// Add combined height of search box and headings to get total column height
+				maxHeight += 104;
+				$("div.game-column").each(function() {
+					$(this).animate({
+						height: maxHeight
+					}, 400);
+				});
+			}, 400);	
+		}
+		
+		$("div.game-column li a.listing:not(.open-mission)").live("click", function() {
 			var el = $(this);
 			var newType;
-			var prevType
+			var prevType;
 			
 			// Determine what was clicked, and what we need to load; in order to configure the Ajax request below
 			if(el.parent().parent().hasClass('games')) {
@@ -101,7 +122,7 @@
 						opacity: 0
 					}, 140);
 			
-			$(".add-" + newType).slideDown();
+			$(".add-" + newType).css({'display' : 'block'}).animate({opacity: 1}, 140);
 
 			var dataId = el.attr('data-id');
 			$.ajax({
@@ -119,7 +140,27 @@
 			el.addClass('selected');
 			
 			$("a[data-type=" + newType + "]").attr('href', '/gameapp/' + newType + 's/add/' + dataId);
+			
+			resizeColumns();
 
+			return false;
+		});
+		
+		$("a.open-mission").live("click", function() {
+			var el = $(this);
+			
+			$("ul.missionss a").removeClass('selected');
+			el.addClass('selected');
+			
+			$.ajax({
+				url: el.attr('href'),
+				success: function(html) {
+					// Insert Mission view frame above management table
+					$(html).insertAfter($(".manager"));
+					$(".mission-view").slideDown();
+				}
+			});
+			
 			return false;
 		});
 		
@@ -169,5 +210,7 @@
 			
 			return false;
 		});
+		
+		resizeColumns();
 	});
 </script>

@@ -2,6 +2,12 @@
 	class MissionsController extends AppController {
 		var $uses = array('Mission', 'Section');
 		
+		function view($mission_id) {
+			$this->set('missions', $this->Mission->findById($mission_id));
+			
+			$this->layout = 'ajax';
+		}
+		
 		function mymissions($section_id) {			
 			$this->set('sections', $this->Section->findById($section_id));
 			$this->set('missions', $this->Mission->find('all', array(

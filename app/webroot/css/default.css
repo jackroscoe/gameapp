@@ -13,9 +13,13 @@ a, li { font-size: 13px; line-height: 16px; }
 ul , ol { margin: 0 0 20px; }
 
 /* Reusable Elements */
-.island {
-	float: left;
-}
+.island { float: left; }
+.col { margin-right: 20px; width: 100%; }
+.col-189 { width: 189px; }
+.col-188 { width: 188px; }
+.col-190 { width: 190px; }
+.col-280 { width: 280px; }
+.col-575 { width: 575px; }
 
 /* Links */
 .add {
@@ -62,11 +66,13 @@ ul , ol { margin: 0 0 20px; }
 /* -- Game Manager -- */
 .manager {
 	overflow: hidden;
-	background: white url(../img/manager_bg.jpg) 0 0 repeat-y;
 	margin-bottom: 20px;
-	border-top: solid 1px #CCC;
-	border-bottom: solid 1px #CCC;
 }
+	.game-column {
+		border: solid 1px #CCC;
+	}
+	.guide-column, .section-column, .mission-column  { margin-left: -1px; }
+	
 	.manager a.add { margin-top: 2px; }
 	a.listing {
 		color: #333;
@@ -86,9 +92,13 @@ ul , ol { margin: 0 0 20px; }
 		right: 0;
 		top: 3px;
 	}
-	//ul.guides li, ul.missions li, ul.sections li { opacity: 0; }
-
-.col-190 { width: 190px; }
+.mission-view {
+	width: 878px;
+	border: solid 1px #CCC;
+	display: none;
+	overflow: hidden;
+	
+}
 
 /* Generic Classes */
 .clear { clear: both; }
