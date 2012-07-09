@@ -21,6 +21,7 @@
 				<input type="text" name="title" />
 				<?php echo $this->Html->link('Add new guide', '/guides/add/', array('class' => 'add right', 'data-type' => 'guide', 'data-prev-type' => 'game')); ?>
 			</div>
+			<p class="no-game">No game selected.</p>
 			<ul class="guides">
 			</ul>
 		</div>
@@ -30,6 +31,7 @@
 				<input type="text" name="title" />
 				<?php echo $this->Html->link('Add new section', '/sections/add/', array('class' => 'add right', 'data-type' => 'section', 'data-prev-type' => 'guide')); ?>
 			</div>
+			<p class="no-guide">No guide selected.</p>
 			<ul class="sections">
 			</ul>
 		</div>
@@ -39,13 +41,14 @@
 				<input type="text" name="title" />
 				<?php echo $this->Html->link('Add new mission', '/missions/add/', array('class' => 'add right', 'data-type' => 'mission', 'data-prev-type' => 'section')); ?>
 			</div>
+			<p class="no-section">No mission selected.</p>
 			<ul class="missions">
 			</ul>
 		</div>
 	</div>
 </div>
 <script>
-	$(document).ready(function() {
+	$(document).ready(function() {	
 		$("div.game-column li a:not(.delete)").live("click", function() {
 			console.log('clicked');
 			var el = $(this);
@@ -56,15 +59,49 @@
 			if(el.parent().parent().hasClass('games')) {
 				prevType = 'game';
 				newType = 'guide';
+				
+				// Hide or display relatively 'No 'X' selected messages'
+				$("p.no-game").animate({optacity: 0}, 140).css({'display' : 'none'});
+				$("p.no-guide").css({'display' : 'block'}).animate({opacity: 1}, 140);
+				$("p.no-section").css({'display' : 'block'}).animate({opacity: 1}, 140);
+				
+				// Slide up unecessary 'add' input fields
+				$("div.add-section").slideUp();
+				$("div.add-mission").slideUp();
+				
+				$("ul.sections li").animate({
+					opacity: 0
+				}, 140);
+				$("ul.missions li").animate({
+					opacity: 0
+				}, 140);
 			} else if (el.parent().parent().hasClass('guides')) {
 				prevType = 'guide';
 				newType = 'section';
+				
+				// Hide or display relatively 'No 'X' selected messages'
+				$("p.no-guide").animate({optacity: 0}, 140).css({'display' : 'none'});
+				$("p.no-section").css({'display' : 'block'}).animate({opacity: 1}, 140);
+				
+				// Slide up unecessary 'add' input fields
+				$("div.add-mission").slideUp();
+				
+				$("ul.missions li").animate({
+					opacity: 0
+				}, 140);
+				$("p.no-game").animate({opacity: 0}, 140);
 			} else if (el.parent().parent().hasClass('sections')) {
 				prevType = 'section';
 				newType = 'mission';
+				
+				$("p.no-section").animate({optacity: 0}, 140).css({'display' : 'none'});
 			}
 			
-			$(".add-" + newType).css({'display' : 'block'});
+			$("ul." + newType + "s li").animate({
+						opacity: 0
+					}, 140);
+			
+			$(".add-" + newType).slideDown();
 
 			var dataId = el.attr('data-id');
 			$.ajax({
@@ -72,14 +109,16 @@
 				success: function(html){
 				// Replace current content with our AJAX response
 					$("ul." + newType + "s").replaceWith(html);
+					$("ul." + newType + "s li").animate({
+						opacity: 1
+					}, 140);
 				} 
 			});
 			
-			$("div.game-column ul a").removeClass('selected');
+			$("ul." + prevType + "s a").removeClass('selected');
 			el.addClass('selected');
 			
 			$("a[data-type=" + newType + "]").attr('href', '/gameapp/' + newType + 's/add/' + dataId);
-			//console.log($("a[data-type=" + newType).height());
 
 			return false;
 		});

@@ -86,6 +86,7 @@ ul , ol { margin: 0 0 20px; }
 		right: 0;
 		top: 3px;
 	}
+	//ul.guides li, ul.missions li, ul.sections li { opacity: 0; }
 
 .col-190 { width: 190px; }
 

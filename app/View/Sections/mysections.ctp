@@ -4,5 +4,8 @@
 			echo $this->Html->link($section['Section']['title'], '/sections/view/' . $section['Section']['id'] . '/' . str_replace(' ', '-', strtolower($section['Section']['title'])), array('class' => 'listing', 'data-id' => $section['Section']['id'], 'data-parent-id' => $guides['Guide']['id']));
 			echo $this->Html->link('Delete Section', '/sections/delete/' . $section['Section']['id'], array('class' => 'delete')); ?>
 		</li><?php
+	}
+	if(count($sections) == 0) { ?>
+		<li>You have not added any sections for this guide yet.</li><?php
 	} ?>
 </ul>
