@@ -80,9 +80,9 @@
 				newType = 'guide';
 				
 				// Hide or display relatively 'No 'X' selected messages'
-				$("p.no-game").animate({optacity: 0}, 140).css({'display' : 'none'});
-				$("p.no-guide").css({'display' : 'block'}).animate({opacity: 1}, 140);
-				$("p.no-section").css({'display' : 'block'}).animate({opacity: 1}, 140);
+				$("p.no-game").animate({optacity: 0}, 240).css({'display' : 'none'});
+				$("p.no-guide").css({'display' : 'block'}).animate({opacity: 1}, 240);
+				$("p.no-section").css({'display' : 'block'}).animate({opacity: 1}, 240);
 				
 				// Slide up unecessary 'add' input fields
 				$("div.add-section").slideUp();
@@ -90,10 +90,10 @@
 				
 				$("ul.sections li").animate({
 					opacity: 0
-				}, 140);
+				}, 240);
 				$("ul.missions li").animate({
 					opacity: 0
-				}, 140);
+				}, 240);
 				
 				$(".game-column").css({'background' : 'white'});
 				$(".section-column").css({'background' : 'white'});
@@ -104,16 +104,16 @@
 				newType = 'section';
 				
 				// Hide or display relatively 'No 'X' selected messages'
-				$("p.no-guide").animate({optacity: 0}, 140).css({'display' : 'none'});
-				$("p.no-section").css({'display' : 'block'}).animate({opacity: 1}, 140);
+				$("p.no-guide").animate({optacity: 0}, 240).css({'display' : 'none'});
+				$("p.no-section").css({'display' : 'block'}).animate({opacity: 1}, 240);
 				
 				// Slide up unecessary 'add' input fields
 				$("div.add-mission").slideUp();
 				
 				$("ul.missions li").animate({
 					opacity: 0
-				}, 140);
-				$("p.no-game").animate({opacity: 0}, 140);
+				}, 240);
+				$("p.no-game").animate({opacity: 0}, 240);
 				
 				$(".guide-column").css({'background' : 'white'});
 				$(".mission-column").css({'background' : 'white'});
@@ -122,15 +122,15 @@
 				prevType = 'section';
 				newType = 'mission';
 				
-				$("p.no-section").animate({optacity: 0}, 140).css({'display' : 'none'});
+				$("p.no-section").animate({optacity: 0}, 240).css({'display' : 'none'});
 				
 				$(".section-column").css({'background' : 'white'});
 				$(".mission-column").css({'background' : '#EFEFEF'});
 			}
 			
 			$("ul." + newType + "s li").animate({
-						opacity: 0
-					}, 140);
+				opacity: 0
+			}, 140);
 			
 			$(".add-" + newType).css({'display' : 'block'}).animate({opacity: 1}, 140);
 
@@ -140,7 +140,7 @@
 				success: function(html){
 				// Replace current content with our AJAX response
 					$("ul." + newType + "s").replaceWith(html);
-					$("ul." + newType + "s li").animate({
+					$("ul." + newType + "s li").css({'opacity' : '0'}).animate({
 						opacity: 1
 					}, 140);
 				} 
@@ -197,7 +197,21 @@
 		
 		$("a.delete").live("click", function() {
 			var el = $(this);
-			var id = el.prev().attr('data-parent-id');
+			
+			if(el.hasClass('selected')) {
+				el.removeClass('selected');
+				el.next().animate({opacity: 0}, 140).css({'display' : 'none'});
+			} else {
+				el.addClass('selected');
+				el.next().css({'display' : 'block'}).animate({opacity: 1}, 140);
+			}
+
+			return false;
+		});
+		
+		$("a.confirm-delete").live("click", function() {
+			var el = $(this);
+			var id = el.prev().prev().attr('data-parent-id');
 			
 			// Determine what was clicked, and what we need to load; in order to configure the Ajax request below
 			if (el.parent().parent().hasClass('guides')) {
