@@ -27,14 +27,19 @@
 		<h2>Sections</h2>
 		<div class="add-section hidden">
 			<input type="text" name="title" />
-			<?php echo $this->Html->link('Add new guide', '/sections/add/', array('class' => 'add', 'data-type' => 'section', 'data-prev-type' => 'guide')); ?>
+			<?php echo $this->Html->link('Add new section', '/sections/add/', array('class' => 'add', 'data-type' => 'section', 'data-prev-type' => 'guide')); ?>
 		</div>
 		<ul class="sections">
 		</ul>
 	</div>
 	<div class="island p20 game-column col-190">
 		<h2>Missions</h2>
-		
+		<div class="add-mission hidden">
+			<input type="text" name="title" />
+			<?php echo $this->Html->link('Add new mission', '/missions/add/', array('class' => 'add', 'data-type' => 'mission', 'data-prev-type' => 'section')); ?>
+		</div>
+		<ul class="missions">
+		</ul>
 	</div>
 </div>
 <script>
