@@ -11,6 +11,7 @@
 			$user = $this->Auth->user();
 			$user_id = $user['id'];
 			
+			$this->set('games', $this->Game->findById($game_id));
 			$this->set('guides', $this->Guide->find('all', array(
 				'conditions' => array(
 					'Guide.user_id' => $user_id,
@@ -40,12 +41,13 @@
 				'game_id' => $game_id,
 				'title' => $title
 			));
-			$this->Guide->save();
 			
+			$this->Guide->save();
 			exit;
 		}
 		
 		function delete($id) {
-			
+			$this->Guide->delete($id);
+			exit;
 		}
 	}

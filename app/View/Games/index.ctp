@@ -4,47 +4,49 @@
 	<p class="italic">NOTE: DELETION OF GAMES IS NOT CURRENTLY AVAILABLE</p>
 	<a href="#" class="link">ADD LINK HERE</a>
 	<?php //$session->check('Auth.User.id') ?>
-	<div class="island p20 game-column col-190">
-		<h2>Games</h2>
-		<ul class="games">
-			<?php foreach($games as $game) { ?>
-				<li><?php
-					echo $this->Html->link($game['Game']['title'], '/games/view/' . $game['Game']['id'] . '/' . str_replace(' ', '-', strtolower($game['Game']['title'])), array('class' => 'fetch-guides', 'data-id' => $game['Game']['id'])); ?>
-				</li><?php
-			} ?>
-		</ul>
-	</div>
-	<div class="island p20 game-column col-190">
-		<h2>My Guides</h2>
-		<div class="add-guide hidden">
-			<input type="text" name="title" />
-			<?php echo $this->Html->link('Add new guide', '/guides/add/', array('class' => 'add', 'data-type' => 'guide', 'data-prev-type' => 'game')); ?>
+	<div class="manager">
+		<div class="island p20 game-column col-190">
+			<h2>Games</h2>
+			<ul class="games">
+				<?php foreach($games as $game) { ?>
+					<li><?php
+						echo $this->Html->link($game['Game']['title'], '/games/view/' . $game['Game']['id'] . '/' . str_replace(' ', '-', strtolower($game['Game']['title'])), array('class' => 'fetch-guides listing', 'data-id' => $game['Game']['id'])); ?>
+					</li><?php
+				} ?>
+			</ul>
 		</div>
-		<ul class="guides">
-		</ul>
-	</div>
-	<div class="island p20 game-column col-190">
-		<h2>Sections</h2>
-		<div class="add-section hidden">
-			<input type="text" name="title" />
-			<?php echo $this->Html->link('Add new section', '/sections/add/', array('class' => 'add', 'data-type' => 'section', 'data-prev-type' => 'guide')); ?>
+		<div class="island p20 game-column col-190">
+			<h2>My Guides</h2>
+			<div class="add-guide hidden mb20">
+				<input type="text" name="title" />
+				<?php echo $this->Html->link('Add new guide', '/guides/add/', array('class' => 'add right', 'data-type' => 'guide', 'data-prev-type' => 'game')); ?>
+			</div>
+			<ul class="guides">
+			</ul>
 		</div>
-		<ul class="sections">
-		</ul>
-	</div>
-	<div class="island p20 game-column col-190">
-		<h2>Missions</h2>
-		<div class="add-mission hidden">
-			<input type="text" name="title" />
-			<?php echo $this->Html->link('Add new mission', '/missions/add/', array('class' => 'add', 'data-type' => 'mission', 'data-prev-type' => 'section')); ?>
+		<div class="island p20 game-column col-190">
+			<h2>Sections</h2>
+			<div class="add-section hidden mb20">
+				<input type="text" name="title" />
+				<?php echo $this->Html->link('Add new section', '/sections/add/', array('class' => 'add right', 'data-type' => 'section', 'data-prev-type' => 'guide')); ?>
+			</div>
+			<ul class="sections">
+			</ul>
 		</div>
-		<ul class="missions">
-		</ul>
+		<div class="island p20 game-column col-190">
+			<h2>Missions</h2>
+			<div class="add-mission hidden mb20">
+				<input type="text" name="title" />
+				<?php echo $this->Html->link('Add new mission', '/missions/add/', array('class' => 'add right', 'data-type' => 'mission', 'data-prev-type' => 'section')); ?>
+			</div>
+			<ul class="missions">
+			</ul>
+		</div>
 	</div>
 </div>
 <script>
 	$(document).ready(function() {
-		$("div.game-column li a").live("click", function() {
+		$("div.game-column li a:not(.delete)").live("click", function() {
 			console.log('clicked');
 			var el = $(this);
 			var newType;
@@ -68,18 +70,44 @@
 			$.ajax({
 				url: '/gameapp/' + newType + 's/my' + newType + 's/' + dataId,
 				success: function(html){
-				// Put our AJAX response after the correct list item
+				// Replace current content with our AJAX response
 					$("ul." + newType + "s").replaceWith(html);
-					console.log(newType);
 				} 
 			});
 			
-			$("ul." + newType + "s a").removeClass('selected');
+			$("div.game-column ul a").removeClass('selected');
 			el.addClass('selected');
 			
 			$("a[data-type=" + newType + "]").attr('href', '/gameapp/' + newType + 's/add/' + dataId);
 			//console.log($("a[data-type=" + newType).height());
 
+			return false;
+		});
+		
+		$("a.delete").live("click", function() {
+			var el = $(this);
+			var id = el.prev().attr('data-parent-id');
+			
+			// Determine what was clicked, and what we need to load; in order to configure the Ajax request below
+			if (el.parent().parent().hasClass('guides')) {
+				prevType = 'game';
+				newType = 'guide';
+			} else if (el.parent().parent().hasClass('sections')) {
+				prevType = 'guide';
+				newType = 'section';
+			} else if (el.parent().parent().hasClass('missions')) {
+				prevType = 'section';
+				newType = 'mission';
+			}
+			
+			$.ajax({
+				url: el.attr('href'),
+				success: function(html){
+				// Replace current guide list with new list
+					$("ul." + prevType + "s a[data-id=" + id + "]").click();
+				} 
+			});
+			
 			return false;
 		});
 		
