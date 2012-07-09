@@ -7,7 +7,10 @@
 			
 		}
 		
-		function myguides($user_id, $game_id) {
+		function myguides($game_id) {
+			$user = $this->Auth->user();
+			$user_id = $user['id'];
+			
 			$this->set('guides', $this->Guide->find('all', array(
 				'conditions' => array(
 					'Guide.user_id' => $user_id,
@@ -28,8 +31,18 @@
 			$this->layout = 'ajax';
 		}
 	
-		function add() {
+		function add($game_id, $title) {
+			$user = $this->Auth->user();
+			$user_id = $user['id'];
 			
+			$this->Guide->set(array(
+				'user_id' => $user_id,
+				'game_id' => $game_id,
+				'title' => $title
+			));
+			$this->Guide->save();
+			
+			exit;
 		}
 		
 		function delete($id) {

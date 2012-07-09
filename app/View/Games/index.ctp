@@ -9,32 +9,28 @@
 		<ul class="games">
 			<?php foreach($games as $game) { ?>
 				<li><?php
-					echo $this->Html->link($game['Game']['title'], '/games/view/' . $game['Game']['id'] . '/' . str_replace(' ', '-', strtolower($game['Game']['title'])), array('class' => 'fetch-guides', 'data-gameId' => $game['Game']['id'])); ?>
+					echo $this->Html->link($game['Game']['title'], '/games/view/' . $game['Game']['id'] . '/' . str_replace(' ', '-', strtolower($game['Game']['title'])), array('class' => 'fetch-guides', 'data-id' => $game['Game']['id'])); ?>
 				</li><?php
 			} ?>
 		</ul>
 	</div>
 	<div class="island p20 game-column col-190">
 		<h2>My Guides</h2>
-		<ul class="my-guides">
-			<li><?php
-				echo $this->Form->create('Guide');
-					echo $this->Form->input('title', array('label' => false));
-				echo $this->Form->end('Add'); ?>
-			</li>
-			<!--
-			<?php //foreach($guides as $guide) { ?>
-				<li><?php
-					//echo $this->Html->link($guide['Guide']['title'], '/games/view/' . $guide['Guide']['id'] . '/' . str_replace(' ', '-', strtolower($guide['Guide']['title']))); ?>
-				</li><?php
-			//} ?>
-			-->
-			
+		<div class="add-guide hidden">
+			<input type="text" name="title" />
+			<?php echo $this->Html->link('Add new guide', '/guides/add/', array('class' => 'add-guide')); ?>
+		</div>
+		<ul class="guides">
 		</ul>
 	</div>
 	<div class="island p20 game-column col-190">
 		<h2>Sections</h2>
-		
+		<div class="add-section hidden">
+			<input type="text" name="title" />
+			<?php echo $this->Html->link('Add new guide', '/sections/add/', array('class' => 'add-section')); ?>
+		</div>
+		<ul class="sections">
+		</ul>
 	</div>
 	<div class="island p20 game-column col-190">
 		<h2>Missions</h2>
@@ -43,26 +39,59 @@
 </div>
 <script>
 	$(document).ready(function() {
-
-		$("ul.games a").click(function() {
-		
+		$("div.game-column li a").live("click", function() {
+			console.log('clicked');
 			var el = $(this);
+			var newType;
+			var prevType
 			
-			if(el.hasClass('selected') == false) {
-				$("ul.games a").removeClass('selected');
-				$(this).addClass('selected');
-			
-				var userId = <?php echo $user['id']; ?>;
-				var gameId = $(this).attr('data-gameId');
-				$.ajax({
-					url: '/gameapp/guides/myguides/' + userId + '/' + gameId,
-					success: function(html){
-					// Put our AJAX response after the correct list item
-						$(html).insertAfter($("ul.my-guides li:first"));
-					} 
-				});
+			// Determine what was clicked, and what we need to load; in order to configure the Ajax request below
+			if(el.parent().parent().hasClass('games')) {
+				prevType = 'game';
+				newType = 'guide';
+			} else if (el.parent().parent().hasClass('guides')) {
+				prevType = 'guide';
+				newType = 'section';
+			} else if (el.parent().parent().hasClass('sections')) {
+				prevType = 'section';
+				newType = 'mission';
 			}
+			
+			$(".add-" + newType).css({'display' : 'block'});
 
+			var dataId = el.attr('data-id');
+			$.ajax({
+				url: '/gameapp/' + newType + 's/my' + newType + 's/' + dataId,
+				success: function(html){
+				// Put our AJAX response after the correct list item
+					$("ul." + newType + "s").replaceWith(html);
+					console.log(newType);
+				} 
+			});
+			
+			$("ul." + newType + "s a").removeClass('selected');
+			el.addClass('selected');
+			
+			$("a.add-" + newType).attr('href', '/gameapp/' + newType + 's/add/' + dataId);
+
+			return false;
+		});
+		
+		$("a.add-guide").click(function() {
+			var el = $(this);
+			var url = el.attr('href');
+			var title = el.prev().val();
+			var data = url.split('/');
+			var game_id = data[4];
+			
+			$.ajax({
+				url: url + '/' + title,
+				success: function(html) {
+					// Replace current guide list with new list
+					$("ul.games a[data-gameId=" + game_id + "]").click();
+				}
+			});
+			
 			return false;
 		});
 	});
