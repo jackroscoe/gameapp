@@ -8,6 +8,24 @@
 			$this->layout = 'ajax';
 		}
 		
+		function edit_view($mission_id) {
+			$this->helpers[] = 'Js';
+			$this->set('missions', $this->Mission->findById($mission_id));
+			
+			$this->layout = 'ajax';
+		}
+		
+		function save_mission() {
+			if(!empty($this->data)) {
+				if($this->Mission->save($this->data)) {
+					$this->Session->setFlash("Mission Saved");
+					exit;
+				}
+			}
+			
+			$this->layout = 'ajax';
+		}
+		
 		function mymissions($section_id) {			
 			$this->set('sections', $this->Section->findById($section_id));
 			$this->set('missions', $this->Mission->find('all', array(

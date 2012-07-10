@@ -108,8 +108,32 @@ ul , ol { margin: 0 0 20px; }
 	overflow: hidden;
 	
 }
+	.mission-view form label { display: block; margin-bottom: 10px; }
+	.mission-view form .input { float: left; width: 280px; margin-right: 20px; }
+	.mission-view form .textarea { width: 575px; margin: 0; }
+	textarea#MissionDescription { display: block; width: 575px; height: 400px; margin-bottom: 20px; }
+	.mission-view .submit { display: none; }
+	.edit-mission {
+		display: block;
+		width: 17px;
+		height: 0;
+		padding: 17px 0 0;
+		overflow: hidden;
+		background: transparent url(../img/icons/edit.png) 0 top no-repeat;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+	}
+		.edit-mission:hover { background-position: 0 -17px; }
+	.save-mission {
+		width: 15px;
+		padding-top: 15px;
+		background-image: url(../img/icons/save.png);
+	}
+		.save-mission:hover { background-position: 0 -15px; }
 
 /* Generic Classes */
+.relative { position: relative; }
 .clear { clear: both; }
 .left { float: left; }
 .right { float: right; }

@@ -195,6 +195,18 @@
 			return false;
 		});
 		
+		$("a.save-mission").live("click", function() {
+			var el = $(this);
+			
+			$("#MissionSaveMissionForm .submit input").click();
+			$("a.save-mission").css({'background-image' : 'url(img/icons/loader.gif', 'background-position' : '0 0'});
+			setTimeout(function() {
+				$("a.save-mission").css({'background-image' : 'url(img/icons/save.png', 'background-position' : '0 -30px'});
+			}, 1005);
+			
+			return false;
+		}); 
+		
 		$("a.delete").live("click", function() {
 			var el = $(this);
 			
