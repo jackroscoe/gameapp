@@ -18,7 +18,7 @@
 		function save_mission() {
 			if(!empty($this->data)) {
 				if($this->Mission->save($this->data)) {
-					$this->Session->setFlash("Mission Saved");
+					//$this->Session->setFlash("Mission Saved");
 					exit;
 				}
 			}

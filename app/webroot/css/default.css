@@ -55,8 +55,8 @@ ul , ol { margin: 0 0 20px; }
 	background: #FFFFFF;
 }
 #header {
-	padding: 40px 20px 20px;
-	border-bottom: solid 1px #CCC;
+	padding: 0px;
+	//border-bottom: solid 1px #CCC;
 }
 #footer {
 	padding: 20px 0 0;

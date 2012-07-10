@@ -15,8 +15,6 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<p class="h1">GameApp</p>
-			
 		</div>
 		<div id="content">
 

@@ -203,7 +203,7 @@
 			
 			setTimeout(function() {
 				$('html,body').animate({
-					scrollTop: $("div.mission-view").offset().top
+					scrollTop: $("div.mission-view").offset().top - 20
 				}, 140);
 			}, 290);
 			
