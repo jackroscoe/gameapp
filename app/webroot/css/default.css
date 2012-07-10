@@ -101,15 +101,17 @@ ul , ol { margin: 0 0 20px; }
 	}
 .mission-view {
 	width: 878px;
+	min-height: 82px;
 	border: solid 1px #CCC;
 	border-bottom: none;
 	background: #EFEFEF;
 	display: none;
 	overflow: hidden;
-	
 }
 	.mission-view form label { display: block; margin-bottom: 10px; }
 	.mission-view form .input { float: left; width: 280px; margin-right: 20px; }
+		.mission-view input { width: 280px; }
+		.mission-view input, .mission-view textarea { border: solid 1px #CCC; padding: 4px; }
 	.mission-view form .textarea { width: 575px; margin: 0; }
 	textarea#MissionDescription { display: block; width: 575px; height: 400px; margin-bottom: 20px; }
 	.mission-view .submit { display: none; }
