@@ -1,4 +1,4 @@
-<div class="mission-view p20 relative" styel="display: block !important;">
+<div class="mission-view mission-edit p20 col-649 relative">
 	<?php foreach($missions as $mission) {
 			//serialize the form element to submit
 		 

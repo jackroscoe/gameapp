@@ -1,6 +1,4 @@
 <div class="island p20 no-bottom">
-	<h1>Game Management</h1>
-	<p>Below is a list of games currently in the system. You can add new games using the button below. If you want to manage the missions for a game you can click on it to view more information.</p>
 	<?php //$session->check('Auth.User.id') ?>
 	<div class="manager">
 		<div class="island p20 manager-column game-column col-190">
@@ -47,24 +45,28 @@
 </div>
 <script>
 	$(document).ready(function() {
-		function resizeColumns() {
+		function resizeColumns(ignoreDiv, ignoreUl) {
 			// Wait until ajax request has fully loaded
 			setTimeout(function() {
 				// Resize all columns to fit the max height
 				var maxHeight = 0;
 				$("div.manager-column ul").each(function() {
-					var el = $(this);
-					if(el.height() > maxHeight) {
-						maxHeight = el.height();
+					if(! $(this).hasClass(ignoreUl)) {
+						var el = $(this);
+						if(el.height() > maxHeight) {
+							maxHeight = el.height();
+						}
 					}
 				});
 
 				// Add combined height of search box and headings to get total column height
 				maxHeight += 104;
 				$("div.manager-column").each(function() {
-					$(this).animate({
-						height: maxHeight
-					}, 400);
+					if(! $(this).hasClass(ignoreDiv)) {
+						$(this).animate({
+							height: maxHeight
+						}, 400);
+					}
 				});
 			}, 400);	
 		}
@@ -151,7 +153,13 @@
 			
 			$("a[data-type=" + newType + "]").attr('href', '/gameapp/' + newType + 's/add/' + dataId);
 			
-			resizeColumns();
+			if($(".mission-view").length > 0) {
+				console.log('>');
+				resizeColumns('mission-column', 'missions');
+			} else {
+				console.log('<');
+				resizeColumns();
+			}
 
 			return false;
 		});
@@ -163,14 +171,14 @@
 			el.addClass('selected');
 			
 			if($(".mission-view").length > 0) {
-				$(".mission-view").slideUp(140);
+				//$(".mission-view").slideUp(140);
 				setTimeout(function() {
 					$.ajax({
 						url: el.attr('href'),
 						success: function(html) {
 							// Insert Mission view frame above management table
 							$(".mission-view").replaceWith(html);
-							$(".mission-view").slideDown(140);
+							//$(".mission-view").slideDown(140);
 						}
 					});
 				}, 145);
@@ -181,6 +189,14 @@
 						// Insert Mission view frame above management table
 						$(html).insertBefore($(".manager"));
 						$(".mission-view").slideDown();
+						
+						// Animate Missions box to be full page height and sit along side mission display
+						var newHeight = $(".mission-column").height() + 477;
+						setTimeout(function() {
+							$(".mission-column").css({'height' : newHeight + 'px'}).animate({
+								marginTop: '-477px', 
+							}, 300);
+						}, 300);
 					}
 				});
 			}
@@ -189,7 +205,6 @@
 				$('html,body').animate({
 					scrollTop: $("div.mission-view").offset().top
 				}, 140);
-				console.log($("div.mission-view").offset().top);
 			}, 290);
 			
 			return false;

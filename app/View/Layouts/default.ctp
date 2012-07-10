@@ -25,7 +25,7 @@
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer" class="clear">
-			<p>ADD FOOTER HERE</p>
+			
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>

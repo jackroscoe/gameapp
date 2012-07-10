@@ -19,7 +19,7 @@ ul , ol { margin: 0 0 20px; }
 .col-188 { width: 188px; }
 .col-190 { width: 190px; }
 .col-280 { width: 280px; }
-.col-575 { width: 575px; }
+.col-649 { width: 649px; }
 
 /* Links */
 .add {
@@ -59,13 +59,13 @@ ul , ol { margin: 0 0 20px; }
 	border-bottom: solid 1px #CCC;
 }
 #footer {
-	padding: 40px 20px 20px;
-	border-top: solid 1px #CCC;
+	padding: 20px 0 0;
+	//border-top: solid 1px #CCC;
 }
 
 /* -- Game Manager -- */
 .manager {
-	overflow: hidden;
+	//overflow: hidden;
 	margin-bottom: 20px;
 }
 	.manager-column {
@@ -99,21 +99,21 @@ ul , ol { margin: 0 0 20px; }
 		opacity: 0;
 		right: -18px;
 	}
+
 .mission-view {
-	width: 878px;
-	min-height: 82px;
+	height: 456px;
 	border: solid 1px #CCC;
 	border-bottom: none;
 	background: #EFEFEF;
-	display: none;
 	overflow: hidden;
 }
+	.description { height: 366px; }
 	.mission-view form label { display: block; margin-bottom: 10px; }
-	.mission-view form .input { float: left; width: 280px; margin-right: 20px; }
+	.mission-view form .input { width: 280px; margin: 0 20px 10px 0; }
 		.mission-view input { width: 280px; }
 		.mission-view input, .mission-view textarea { border: solid 1px #CCC; padding: 4px; }
 	.mission-view form .textarea { width: 575px; margin: 0; }
-	textarea#MissionDescription { display: block; width: 575px; height: 400px; margin-bottom: 20px; }
+	textarea#MissionDescription { display: block; width: 575px; height: 310px; margin-bottom: 20px; }
 	.mission-view .submit { display: none; }
 	.edit-mission {
 		display: block;
@@ -135,6 +135,7 @@ ul , ol { margin: 0 0 20px; }
 		.save-mission:hover { background-position: 0 -15px; }
 
 /* Generic Classes */
+.scroll { overflow: scroll; }
 .relative { position: relative; }
 .clear { clear: both; }
 .left { float: left; }
