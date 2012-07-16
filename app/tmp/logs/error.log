@@ -1,0 +1,1080 @@
+2012-07-06 16:35:17 Error: Fatal Error (1): Call to a member function url() on a non-object in [C:\wamp\www\gameapp\app\View\Pages\home.ctp, line 4]
+2012-07-06 16:35:17 Error: [FatalErrorException] Call to a member function url() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 16:36:19 Error: [MissingHelperException] Helper class Helper could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('')
+#1 C:\wamp\www\gameapp\lib\Cake\View\View.php(812): HelperCollection->__isset('')
+#2 C:\wamp\www\gameapp\app\View\Pages\home.ctp(4): View->__get('')
+#3 C:\wamp\www\gameapp\lib\Cake\View\View.php(920): include('C:\wamp\www\gam...')
+#4 C:\wamp\www\gameapp\lib\Cake\View\View.php(883): View->_evaluate('C:\wamp\www\gam...', Array)
+#5 C:\wamp\www\gameapp\lib\Cake\View\View.php(475): View->_render('C:\wamp\www\gam...')
+#6 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render('home', NULL)
+#7 C:\wamp\www\gameapp\app\Controller\PagesController.php(73): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-06 16:36:31 Error: [MissingHelperException] Helper class Helper could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('')
+#1 C:\wamp\www\gameapp\lib\Cake\View\View.php(812): HelperCollection->__isset('')
+#2 C:\wamp\www\gameapp\app\View\Pages\home.ctp(4): View->__get('')
+#3 C:\wamp\www\gameapp\lib\Cake\View\View.php(920): include('C:\wamp\www\gam...')
+#4 C:\wamp\www\gameapp\lib\Cake\View\View.php(883): View->_evaluate('C:\wamp\www\gam...', Array)
+#5 C:\wamp\www\gameapp\lib\Cake\View\View.php(475): View->_render('C:\wamp\www\gam...')
+#6 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render('home', NULL)
+#7 C:\wamp\www\gameapp\app\Controller\PagesController.php(73): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-06 16:36:42 Error: [MissingHelperException] Helper class Helper could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('')
+#1 C:\wamp\www\gameapp\lib\Cake\View\View.php(812): HelperCollection->__isset('')
+#2 C:\wamp\www\gameapp\app\View\Pages\home.ctp(4): View->__get('')
+#3 C:\wamp\www\gameapp\lib\Cake\View\View.php(920): include('C:\wamp\www\gam...')
+#4 C:\wamp\www\gameapp\lib\Cake\View\View.php(883): View->_evaluate('C:\wamp\www\gam...', Array)
+#5 C:\wamp\www\gameapp\lib\Cake\View\View.php(475): View->_render('C:\wamp\www\gam...')
+#6 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render('home', NULL)
+#7 C:\wamp\www\gameapp\app\Controller\PagesController.php(73): Controller->render('home')
+#8 [internal function]: PagesController->display('home')
+#9 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#10 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-06 16:44:15 Error: Fatal Error (1): Call to a member function allow() on a non-object in [C:\wamp\www\gameapp\app\Controller\UsersController.php, line 6]
+2012-07-06 16:44:15 Error: [FatalErrorException] Call to a member function allow() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 16:50:16 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Users\index.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-06 16:51:52 Error: [MissingControllerException] Controller class LoginController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-06 16:52:11 Error: [MissingControllerException] Controller class LoginController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-06 18:25:23 Error: [MissingActionException] Action GamesController::index() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-06 18:25:54 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Games\index.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-06 18:27:01 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\Controller\GamesController.php, line 4]
+2012-07-06 18:27:01 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 18:54:29 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 10]
+2012-07-06 18:54:29 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 10, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 10, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 18:55:01 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 10]
+2012-07-06 18:55:01 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 10, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 10, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:08:12 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Layouts\default.ctp, line 15]
+2012-07-06 19:08:12 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 15, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 15, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:08:18 Error: Fatal Error (1): Call to a member function check() on a non-object in [C:\wamp\www\gameapp\app\View\Layouts\default.ctp, line 15]
+2012-07-06 19:08:18 Error: [FatalErrorException] Call to a member function check() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 15, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 15, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:09:09 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\gameapp\lib\Cake\View\View.php(812): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\gameapp\app\View\Layouts\default.ctp(15): View->__get('Auth')
+#3 C:\wamp\www\gameapp\lib\Cake\View\View.php(920): include('C:\wamp\www\gam...')
+#4 C:\wamp\www\gameapp\lib\Cake\View\View.php(883): View->_evaluate('C:\wamp\www\gam...', Array)
+#5 C:\wamp\www\gameapp\lib\Cake\View\View.php(539): View->_render('C:\wamp\www\gam...')
+#6 C:\wamp\www\gameapp\lib\Cake\View\View.php(483): View->renderLayout('', 'default')
+#7 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#8 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-06 19:09:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-06 19:10:50 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 57]
+2012-07-06 19:10:50 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 57, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 57, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:11:03 Error: Fatal Error (4): parse error, expecting `')'' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 42]
+2012-07-06 19:11:03 Error: [FatalErrorException] parse error, expecting `')''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:11:38 Error: Fatal Error (4): parse error, expecting `')'' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 42]
+2012-07-06 19:11:38 Error: [FatalErrorException] parse error, expecting `')''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:11:38 Error: Fatal Error (4): parse error, expecting `')'' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 42]
+2012-07-06 19:11:38 Error: [FatalErrorException] parse error, expecting `')''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:11:55 Error: Fatal Error (4): parse error, expecting `')'' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 42]
+2012-07-06 19:11:55 Error: [FatalErrorException] parse error, expecting `')''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:19:28 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 57]
+2012-07-06 19:19:28 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 57, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 57, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-06 19:19:35 Error: Fatal Error (4): parse error, expecting `')'' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 42]
+2012-07-06 19:19:35 Error: [FatalErrorException] parse error, expecting `')''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 42, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:12:31 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Guides\index.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GuidesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-07 13:15:49 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 13]
+2012-07-07 13:15:49 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 13, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 13, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:23:19 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:23:19 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:23:25 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:23:25 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:27:49 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:27:49 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:27:52 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:27:52 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:28:09 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:28:09 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:28:12 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:28:12 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:28:41 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:28:41 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:29:03 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:29:03 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:29:03 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:29:03 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:29:11 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:29:11 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:30:50 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\gameapp\app\Controller\GuidesController.php, line 11]
+2012-07-07 13:30:50 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 11, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 11, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:31:43 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:31:43 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:31:50 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:31:50 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:31:54 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:31:54 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:32:09 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:32:09 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:33:09 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:33:09 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:34:42 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:34:42 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:37:20 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:37:20 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:37:37 Error: Fatal Error (1): Call to a member function autoComplete() on a non-object in [C:\wamp\www\gameapp\app\View\Guides\index.ctp, line 12]
+2012-07-07 13:37:37 Error: [FatalErrorException] Call to a member function autoComplete() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 13:50:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\gameapp\app\Controller\GamesController.php, line 5]
+2012-07-07 13:50:31 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:11:13 Error: Fatal Error (1): Call to a member function check() on a non-object in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 6]
+2012-07-07 14:11:13 Error: [FatalErrorException] Call to a member function check() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:11:57 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\Controller\GamesController.php, line 9]
+2012-07-07 14:11:57 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 9, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 9, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:12:02 Error: Fatal Error (1): Call to a member function check() on a non-object in [C:\wamp\www\gameapp\app\Controller\GamesController.php, line 8]
+2012-07-07 14:12:02 Error: [FatalErrorException] Call to a member function check() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 8, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 8, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:22:54 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [C:\wamp\www\gameapp\app\Controller\AppController.php, line 35]
+2012-07-07 14:22:54 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 35, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 35, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:24:08 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\Controller\GamesController.php, line 9]
+2012-07-07 14:24:08 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 9, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 9, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:27:24 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\Controller\GamesController.php, line 12]
+2012-07-07 14:27:24 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-07 14:28:23 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 19:51:49 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 12]
+2012-07-08 19:51:49 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-08 19:52:12 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 12]
+2012-07-08 19:52:12 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 12, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 12, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-08 20:09:05 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:09:19 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:09:56 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:15:30 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:21:05 Error: Fatal Error (4): parse error, expecting `'&'' or `T_VARIABLE' in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 50]
+2012-07-08 20:21:05 Error: [FatalErrorException] parse error, expecting `'&'' or `T_VARIABLE'
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 50, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 50, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-08 20:21:23 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 50]
+2012-07-08 20:21:23 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 50, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 50, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-08 20:21:37 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:21:41 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:22:58 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:23:05 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:23:19 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:23:20 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:23:20 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:24:31 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:24:42 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:44:50 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:44:57 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:45:01 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:45:05 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:45:30 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-08 20:45:44 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:52:28 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:52:37 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:52:47 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:53:18 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 20:53:34 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 21:00:34 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 21:02:42 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-08 21:02:54 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 09:01:47 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 22]
+2012-07-09 09:01:47 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 22, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 22, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 09:05:58 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Guides\add.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GuidesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-09 09:06:17 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Guides\add.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GuidesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-09 09:06:23 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Guides\add.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GuidesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-09 09:19:36 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Guides\add.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GuidesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-09 09:19:57 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Guides\add.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GuidesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-09 10:36:16 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:36:20 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:37:02 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:38:51 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:39:39 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:40:31 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:40:44 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:41:19 Error: [MissingControllerException] Controller class GuideController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 10:41:20 Error: [MissingControllerException] Controller class GuideController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 10:41:39 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:42:54 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:46:25 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:47:06 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:47:24 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:50:09 Error: [MissingActionException] Action SectionsController::mysections() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:50:17 Error: [MissingActionException] Action SectionsController::mysections() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 10:50:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\gameapp\app\Controller\SectionsController.php, line 7]
+2012-07-09 10:50:38 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 7, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 7, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 10:51:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Section.user_id' in 'where clause'
+#0 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Section...', Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Section...', Array, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Section...', false)
+#4 C:\wamp\www\gameapp\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\wamp\www\gameapp\app\Controller\SectionsController.php(12): Model->find('all', Array)
+#6 [internal function]: SectionsController->mysections('1')
+#7 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(SectionsController), Array)
+#8 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 10:51:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Section.game_id' in 'where clause'
+#0 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT `Section...', Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(671): DboSource->execute('SELECT `Section...', Array, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Model\Datasource\DboSource.php(1082): DboSource->fetchAll('SELECT `Section...', false)
+#4 C:\wamp\www\gameapp\lib\Cake\Model\Model.php(2631): DboSource->read(Object(AppModel), Array)
+#5 C:\wamp\www\gameapp\app\Controller\SectionsController.php(11): Model->find('all', Array)
+#6 [internal function]: SectionsController->mysections('1')
+#7 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(SectionsController), Array)
+#8 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-09 11:10:30 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 12:42:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 12:42:42 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 12:42:51 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 13:36:04 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:04 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:06 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:06 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:07 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:07 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:23 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:23 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:25 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:25 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:25 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:25 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:26 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:26 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 13:36:53 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Guides\myguides.ctp, line 5]
+2012-07-09 13:36:53 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 5, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-09 14:48:34 Error: [MissingActionException] Action SectionsController::delete() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 14:50:37 Error: [MissingActionException] Action SectionsController::delete() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 14:54:00 Error: [MissingControllerException] Controller class UndefinedsController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 14:55:49 Error: [MissingControllerException] Controller class UndefinedsController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 15:10:36 Error: [MissingControllerException] Controller class UndefinedsController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 15:20:35 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 15:32:05 Error: [MissingControllerException] Controller class UndefinedsController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 15:35:04 Error: [MissingControllerException] Controller class UndefinedsController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 16:05:41 Error: [MissingControllerException] Controller class UndefinedsController could not be found.
+#0 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-09 16:54:33 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 17:04:39 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 19:40:57 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-09 20:02:07 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-10 09:40:52 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 09:40:52 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 09:41:02 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 09:41:02 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:31:19 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:31:29 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:32:01 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:32:04 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:39:48 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:39:54 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:41:16 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 10:44:03 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 3]
+2012-07-10 10:44:03 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', 'C:\wamp\www\gam...', 3, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', 'C:\wamp\www\gam...', 3, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:45:15 Error: Fatal Error (1): Call to a member function submit() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 6]
+2012-07-10 10:45:15 Error: [FatalErrorException] Call to a member function submit() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:45:20 Error: Fatal Error (1): Call to a member function submit() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 6]
+2012-07-10 10:45:20 Error: [FatalErrorException] Call to a member function submit() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:45:47 Error: Fatal Error (1): Call to a member function submit() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 6]
+2012-07-10 10:45:47 Error: [FatalErrorException] Call to a member function submit() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:48:05 Error: Fatal Error (1): Call to a member function form() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 10:48:05 Error: [FatalErrorException] Call to a member function form() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:48:38 Error: Fatal Error (1): Call to a member function form() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 10:48:38 Error: [FatalErrorException] Call to a member function form() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:48:39 Error: Fatal Error (1): Call to a member function form() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 10:48:39 Error: [FatalErrorException] Call to a member function form() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:48:52 Error: Fatal Error (1): Call to a member function form() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 10:48:52 Error: [FatalErrorException] Call to a member function form() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:49:06 Error: [MissingHelperException] Helper class Helper could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('')
+#1 C:\wamp\www\gameapp\lib\Cake\View\View.php(812): HelperCollection->__isset('')
+#2 C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp(4): View->__get('')
+#3 C:\wamp\www\gameapp\lib\Cake\View\View.php(920): include('C:\wamp\www\gam...')
+#4 C:\wamp\www\gameapp\lib\Cake\View\View.php(883): View->_evaluate('C:\wamp\www\gam...', Array)
+#5 C:\wamp\www\gameapp\lib\Cake\View\View.php(475): View->_render('C:\wamp\www\gam...')
+#6 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#7 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#8 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-07-10 10:49:09 Error: Fatal Error (1): Call to a member function submit() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 7]
+2012-07-10 10:49:09 Error: [FatalErrorException] Call to a member function submit() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 7, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 7, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:49:37 Error: Fatal Error (1): Call to a member function form() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 4]
+2012-07-10 10:49:37 Error: [FatalErrorException] Call to a member function form() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 4, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:50:44 Error: Fatal Error (1): Call to a member function submit() on a non-object in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 6]
+2012-07-10 10:50:44 Error: [FatalErrorException] Call to a member function submit() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 6, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 10:53:20 Error: [MissingHelperException] Helper class AjaxHelper could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(861): HelperCollection->load('Ajax', Array)
+#1 C:\wamp\www\gameapp\lib\Cake\View\View.php(468): View->loadHelpers()
+#2 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#4 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-07-10 11:02:31 Error: [MissingViewException] View file "C:\wamp\www\gameapp\app\View\Missions\save_mission.ctp" is missing.
+#0 C:\wamp\www\gameapp\lib\Cake\View\View.php(472): View->_getViewFileName(NULL)
+#1 C:\wamp\www\gameapp\lib\Cake\Controller\Controller.php(957): View->render(NULL, NULL)
+#2 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(MissionsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-10 11:20:43 Error: Fatal Error (4): parse error in [C:\wamp\www\gameapp\app\View\Missions\edit_view.ctp, line 25]
+2012-07-10 11:20:43 Error: [FatalErrorException] parse error
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', 'C:\wamp\www\gam...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', 'C:\wamp\www\gam...', 25, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', 'C:\wamp\www\gam...', 25, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 12:29:22 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-10 12:29:29 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-10 13:55:10 Error: Fatal Error (1): Call to a member function check() on a non-object in [C:\wamp\www\gameapp\app\View\Games\index.ctp, line 2]
+2012-07-10 13:55:10 Error: [FatalErrorException] Call to a member function check() on a non-object
+#0 C:\wamp\www\gameapp\lib\Cake\Error\ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\gam...', 2, Array)
+#2 C:\wamp\www\gameapp\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\gam...', 2, Array)
+#3 C:\wamp\www\gameapp\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-07-10 14:30:28 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-10 14:36:50 Error: [MissingActionException] Action GamesController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(GamesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-10 14:43:11 Error: [MissingActionException] Action SectionsController::view() could not be found.
+#0 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\gameapp\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(SectionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\gameapp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
